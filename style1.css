@@ -1,0 +1,113 @@
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Move text */
+#move {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Image row */
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.img img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.img img:hover {
+  transform: scale(1.1);
+}
+
+/* Choice buttons */
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  width: 100%;
+}
+#rock, #paper, #scissor {
+  padding: 20px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#rock:hover, #paper:hover, #scissor:hover {
+  background-color: #010301;
+  transform: scale(1.05);
+}
+
+/* Result section */
+#result {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+}
+.score {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#player-score, #computer-score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#player-score {
+  color: green;
+  margin: 0 30px;
+}
+#computer-score {
+  color: red;
+  margin: 0 30px;
+}
+#message {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+/* Reset button */
+#reset {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#reset:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
